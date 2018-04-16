@@ -125,7 +125,7 @@
 					e.preventDefault();
 				});
 			}
-	
+
 			if(options.autoPlay == true) {
 				var AP = setInterval(function(){
 					nextSlide();
@@ -233,7 +233,7 @@
 					"background-attachment": "fixed"
 				})
 			}
-	
+
 			if(options.keyboard == true) {
 				$(window).keydown(function(e) {
 					if((e.keydown || e.which) == 37) {

@@ -46,7 +46,15 @@ a:active {
   /* background-color: var(--active-bgcolor); */
 }
 .header {
+  height: 100px;
   background: center / cover no-repeat url("../images/header.png");
+}
+.overlay-text {
+  z-index: 999;
+  display: inline-block;
+  position: absolute;
+  margin-top: 4rem;
+  margin-left: 4rem;
 }
 /* ========================================================== */
 /* ============== NAV STYLES ======================== */
@@ -60,11 +68,16 @@ nav li a:hover {
   background-color: var(--active-bgcolor);
   transition: .7s;
 }
-
+.description {
+  padding: 2rem;
+}
 
 /* Horiz */
 .nav-horiz {
-
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  z-index: 999;
 }
 .nav-horiz ul {
   width: 100%;
@@ -87,7 +100,9 @@ nav li a:hover {
 }
 .nav-horiz li a:hover {
 }
-
+.prev-slide, .next-slide {
+  font-size: 4rem;
+}
 /* ==================================== */
 /* =========== GRID STYLES ============ */
 /* ==================================== */
@@ -95,8 +110,8 @@ nav li a:hover {
 .full-page-wrap {
   background-color: var(--wrap-bgcolor);
   margin: auto;
-  width: 90%;
-  max-width: 1400px;
+  width: 100%;
+
 }
 
 .grid-wrap  {
